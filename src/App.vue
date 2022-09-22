@@ -2,18 +2,21 @@
   <div id="app">
     <HeaderComponent />
     <ContentComponent />
+    <BuyComponent />
   </div>
 </template>
 
 <script>
 import HeaderComponent from "./components/HeaderComponent.vue";
 import ContentComponent from "./components/ContentComponent.vue";
+import BuyComponent from "./components/BuyComponent.vue"
 
 export default {
   name: 'App',
   components: {
     HeaderComponent,
     ContentComponent,
+    BuyComponent,
   }
 }
 </script>
