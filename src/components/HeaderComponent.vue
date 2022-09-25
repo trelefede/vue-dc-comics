@@ -47,11 +47,11 @@ ul{
     display: flex;
     list-style-type: none;
     a{
-        padding: 20px; 
+        padding: 20px 10px;
         text-decoration: none;
         color: #2f4f4f;
         font-weight: bold;
-        font-size: 0.5rem;
+        font-size: 0.7rem;
     }
     
 }
