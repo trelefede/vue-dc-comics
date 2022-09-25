@@ -2,7 +2,7 @@
   <div id="app">
     <HeaderComponent />
     <JumbotronComponent />
-    <ContentComponent />
+    <ContentComponent :cards="comics" />
     <BuyComponent />
     <FooterComponent />
   </div>
@@ -12,11 +12,18 @@
 import HeaderComponent from "./components/HeaderComponent.vue";
 import JumbotronComponent from "./components/JumbotronComponent.vue";
 import ContentComponent from "./components/ContentComponent.vue";
-import BuyComponent from "./components/BuyComponent.vue"
-import FooterComponent from "./components/FooterComponent.vue"
+import BuyComponent from "./components/BuyComponent.vue";
+import FooterComponent from "./components/FooterComponent.vue";
+
+import { comics } from "./data/data.js";
 
 export default {
   name: 'App',
+  data(){
+    return {
+      comics,
+    }
+  },
   components: {
     HeaderComponent,
     JumbotronComponent,

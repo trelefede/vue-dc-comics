@@ -4,7 +4,7 @@
         <nav>
             <ul>
                 <li><a href="#">CHARACTERS</a></li>
-                <li><a href="#">COMICS</a></li>
+                <li><a href="#" class="active">COMICS</a></li>
                 <li><a href="#">MOVIES</a></li>
                 <li><a href="#">TV</a></li>
                 <li><a href="#">GAMES</a></li>
@@ -39,19 +39,28 @@ header{
 
 img{
     width: 50px;
-    height: 50px;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 ul{
     display: flex;
     list-style-type: none;
+    height: 100%;
+    li{
+        padding: 0px 10px;
+        height: 100%;
+    }
     a{
-        padding: 20px 10px;
         text-decoration: none;
         color: #2f4f4f;
         font-weight: bold;
         font-size: 0.7rem;
+        height: 100%;
+        &.active{
+        border-bottom: 3px solid #0182f9;
+        color: #0182f9;
+        border-bottom-width: 70%;
+        }
     }
     
 }
